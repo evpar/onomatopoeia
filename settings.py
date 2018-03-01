@@ -1,0 +1,44 @@
+# Options/settings for the game, constants used in the game
+from pygame import Rect
+
+FPS = 60
+
+global SCREEN_WIDTH, SCREEN_HEIGHT
+SCREEN_WIDTH = 960
+SCREEN_HEIGHT = 540
+
+global play_area, gate
+play_area = Rect((40, 27), (730, 490))  # Rect(pos, size)
+gate = Rect((765, 180), (10, 200))
+
+global PAW_POS
+PAW_POS = (810, 50)
+
+global ANIMAL_SPEED, PLAYER_SPEED, GATE_SPEED
+ANIMAL_SPEED = 8
+PLAYER_SPEED = 19
+GATE_SPEED = 5
+
+global scale_factor
+scale_factor = (1, 1)
+
+global FENCE_BACK, FENCE_RIGHT, FENCE_LEFT, FENCE_FRONT
+FENCE_BACK = (10, 10)
+FENCE_LEFT = (20 ,10)
+FENCE_RIGHT = (760, 25)
+FENCE_FRONT = (25, 440)
+
+NUMBER_OF_LEVELS = 4
+NUMBER_OF_LIVES = 3
+
+SELECTED_BUTTON_TEXT_COLOR = (255, 255, 255)
+BUTTON_TEXT_COLOR = (100, 20, 60)
+
+CALL_CIRCLE_COLOR = (0, 50, 150, 30)
+
+SPEECH_BUBBLE_VISIBLE_TIME_MS = 800
+EXCLAMATION_MARK_VISIBLE_TIME_MS = 600
+HEARD_CALL_VISIBLE_TIME_MS = 400
+
+
+
